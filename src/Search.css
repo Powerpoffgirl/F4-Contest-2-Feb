@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Inter&family=Poppins:wght@300&display=swap');
+
+
+.search{
+    margin-top:5vh;
+    align-items: center;
+    margin-left: 4vw;
+    margin-right: 3vw;
+}
+
+.searchInput{
+    background-color: #1E1E1E;
+    color:#FFFF;
+    border-radius: 5vh;
+    padding-left: 2vw;
+    width: 89vw;
+    height: 8vh;
+    border: 1px solid #FFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
