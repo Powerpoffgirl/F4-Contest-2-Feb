@@ -1,72 +1,15 @@
 Deployed website link: https://aesthetic-pithivier-f6326a.netlify.app/
 
-# Getting Started with Create React App
+Create a social media feed application that allows users to browse and like posts - Here are all the things it needs to have:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A flex of posts, each containing an username, post content, and an image and a button to like the post
+A button to load more posts from the API when the user reaches the end of the current list - API : https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=20
+A count of the number of likes the user has given in the current session
+A search bar to filter posts based on the title of the post
+Since the image is not coming in the api result use this as your image src in the post component - https://picsum.photos/200?random=${post.id} where post.id is the id given in the object returned by api.
 
-## Available Scripts
+To implement this, you'll need to use the useState hook to manage the state of the posts, the number of likes, and the search term entered by the user. You'll also need to use the useEffect hook to make an API call to get the initial posts.
 
-In the project directory, you can run:
+Make 2 components - search components to filter, post component which will have the state of likes etc, rest everything else can be in your App.js
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Figma Link- https://www.figma.com/file/B3y2KYvExAvB9gXIG6tm3K/F4---Contest-2?node-id=0%3A1&t=7ZwQVXA2ASOFX2wO-1"
